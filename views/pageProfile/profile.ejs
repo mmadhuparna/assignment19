@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--include header part-->
+ <% include ../partials/head %> 
+</head>
+
+<!--applying internal styles-->
+<style>
+  body{
+    background-color: rgb(56, 141, 141)
+  }
+  .text-white{
+    text-align: left;
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: 1px; 
+    
+  }
+  .text{
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 1px;
+    color: #fff;
+  }
+  .text-icon{
+    text-align: center;
+    font-size: 35px;
+    letter-spacing: 1px;
+    color: #fff;
+  }
+  .bottom{
+    margin-top: 15%;
+  }
+  .uppercase{
+    text-transform: uppercase;
+  }
+</style>
+<body>
+  <!--including nav part-->
+<% include ../partials/nav %>
+
+<div class="container-fluid text-center">    
+ 
+  <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1 class="text-white">
+            Hello, I'm<strong class="uppercase"> <%= user.firstname %></strong><br>I can create&nbsp;<span>beautiful design</span>&nbsp;for you.</h1>
+        </div>
+      </div>
+      
+      <div class="row bottom">
+        <div class="col-md-4">
+          <i class=" fa fa-desktop text-icon"></i>
+          <h2 class="text">Web Design</h2>
+        </div>
+        
+        <div class="col-md-4">
+          <i class="fa fa-qrcode text-icon"></i>
+          <h2 class="text">Web Development</h2>
+        </div>
+        
+        <div class="col-md-4">
+          <i class="fa fa-gear text-icon"></i>
+          <h2 class="text">Marketing strategy</h2>
+        </div>
+      </div>
+
+    </div>	
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--including header part-->
+    <% include ../partials/head %>
+
+    <!--applying internal styles-->
+    <style>
+        body{
+            background-color: rgb(194, 238, 238)
+        }
+        .progress {
+            position: relative;
+            height: 13px;
+            width:500px;
+            margin-bottom: 10px;
+            border-radius: 0;
+        }
+              
+        .progress-bar {
+            background: #ae3d08;
+            font-size:14px;
+            padding-left:5px;
+            padding-right:5px;
+            float:right;
+        }
+        .progress-right{
+            background: #0c0c0c;
+            font-size:14px;
+            margin-left: 0;
+            padding-left:0;
+            padding-right:5px;
+            float:left;
+        } 
+              
+        .skills-left{
+            float:right;
+            text-align: right;
+        }
+
+        .skills-right{
+            float:left;
+            text-align:left; 
+        }
+        ul{
+            padding-inline-start: 0;  
+        }
+
+         ul  li{
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 20px;
+        }
+        .lead{
+            font-size: 14px;
+            margin-top: 25px;
+            font-weight: bold;
+        }
+              
+    </style>
+</head>
+
+<body >
+    <!--including navigation-->
+		<% include ../partials/nav %>
+		<!--main skill page-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+                    <h1>My skills</h1>
+                    <p class="lead">
+                        strong creative skills<br>
+                        the ability to pay attention to detail<br>
+                        good problem-solving skills and a logical approach to work<br>
+                        an ability to work to deadlines
+ 
+                    </p>	
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="skills-left skills">
+                        <h3>Design</h3>
+                        <ul class="skills-ul">
+                            <li class="left">
+                                <span>Web Design</span>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" data-percent="85%" style="width: 85%;"></div>
+                                </div>
+                            </li>
+                            
+                            <li>
+                                <span>Mobile design</span>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" data-percent="65%" style="width: 65%;"></div>
+                                </div>
+                            </li>
+                            
+                            <li>
+                                <span>Branding &amp; Identity</span>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" data-percent="75%" style="width: 75%;"></div>
+                                </div>
+                            </li>
+                            
+                            <li>
+                                <span>DTP</span>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" data-percent="70%" style="width: 70%;"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-sm-12">
+                    <div class="skills-right skills">
+                        <h3>Developing</h3>
+                        <ul class="skills-ul">
+                            <li>
+                                <span>HTML &amp; CSS3</span>
+                                <div class="progress">
+                                    <div class="progress-right progress-bar" role="progressbar" data-percent="85%" style="width: 85%;"></div>
+                                </div>
+                            </li>
+                            
+                            <li>
+                                <span>Javascript / Jquery</span>
+                                <div class="progress">
+                                    <div class="progress-right progress-bar " role="progressbar" data-percent="75%" style="width: 75%;"></div>
+                                </div>
+                            </li>
+                            
+                            <li>
+                                <span>Node js &amp; MongodB</span>
+                                <div class="progress">
+                                    <div class="progress-right progress-bar" role="progressbar" data-percent="60%" style="width: 60%;"></div>
+                                </div>
+                            </li>
+                            
+                            <li>
+                                <span>WordPress</span>
+                                <div class="progress">
+                                    <div class="progress-right progress-bar" role="progressbar" data-percent="75%" style="width: 75%;">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

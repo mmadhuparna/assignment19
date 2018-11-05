@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!--including header part-->
+	<% include ../partials/head %>
+
+	<!--applying internal styles-->
+	<style>
+		body{
+			background-color: rgb(38, 151, 216)
+		}
+		.contact{
+			background-color: rgb(238, 241, 245);
+			box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
+			text-align: center;
+			border-radius:50%;
+			height: 360px;
+			width: 360px;
+		}
+		.contact-infos{
+			padding-top: 25%;	
+			
+		}
+		.contact-subtitle-1{
+			font-style: italic;
+			font-size: 20px;
+		}
+		p{
+			font-size: 15px;
+			color: rgb(94, 91, 91);
+		}
+	</style>
+</head>
+
+<body >
+	<!--including nav part-->
+	<% include ../partials/nav %>
+		<div class="container">
+			<!-- Section title -->
+			<h2 class="section-title">Contact</h2>
+			<div class ="row">
+				<div class="contact col-md-4 col-md-offset-4 ">
+
+	                <!-- Contact infos -->                 
+                    <div class="contact-infos">
+                	    <h4 class="contact-subtitle-1"> Address</h4>
+                	    <p>Tellapur village, medak, Hyderabad </p>
+                	    <h4 class="contact-subtitle-1"> Phone</h4>
+                	    <p>+9502275592</p>
+                	    <h4 class="contact-subtitle-1"> Mail</h4>
+                	    <p>mmadhuparna@yahoo.com</p>
+				    </div>
+			    </div>
+            </div>
+        </div>
+</body>
+</html>
